@@ -1,32 +1,15 @@
 /*
 OverwatchStatsPatch003.sql
-Create Combat Schema
-Create Combat.Competitive Table 
+Adding Environmental Kills to Combat.OverallCombatStats table as it was missed in previous patch
+Giving all previous values a value of 0 before adding not null constraint
 */
-use Overwatch
---------Create Combat Schema--------
-if schema_id('Combat') is null
-	execute('create schema Combat');
+alter table Combat.Competitive
+	add EnvironmentalKills int;
+go
+-----Giving all current Record in table for environmental kills 0-----
+update Combat.Competitive
+	set EnvironmentalKills = 0;
+go
 
---------Create Combat.CompetitiveTable--------
-if(not exists(
-	select *
-	from information_schema.tables
-	where table_schema = 'Combat'
-	and table_name = 'Competitive'))
-	begin
-		create table Combat.Competitive
-		(
-			ProfileGuid uniqueidentifier not null,
-			MeleeFinalBlows int not null,
-			ObjectiveKills int not null,
-			SoloKills int not null,
-			FinalBlows int not null,
-			DamageDone bigint not null,
-			Eliminations int not null,
-			MultiKills int not null,
-			RecordDate Date not null,
-			constraint PK_Combat_Competitive_ProfileGuid_RecordDate primary key (ProfileGuid, RecordDate),
-			constraint FK_Combat_Competitive_General_UserProfile_ProfileGuid foreign key (ProfileGuid) references [General].[UserProfile](ProfileGuid)
-		);
-	end
+alter table Combat.Competitive
+	alter column EnvironmentalKills int not null;
