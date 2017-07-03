@@ -3,7 +3,6 @@ OverwatchStatsPatch002.sql
 Create Combat Schema
 Create Combat.Competitive Table 
 */
-use Overwatch
 --------Create Combat Schema--------
 if schema_id('Combat') is null
 	execute('create schema Combat');

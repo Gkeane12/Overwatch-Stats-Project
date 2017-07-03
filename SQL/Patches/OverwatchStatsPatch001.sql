@@ -7,7 +7,6 @@ General.Platform table to store the different type of platform
 General.UserProfile table responsible for storing information regarding the specific profile,  
 */
 -----------Create General Schema-----------
-use Overwatch;
 if schema_id('General') is null
 	execute('create schema General');
 

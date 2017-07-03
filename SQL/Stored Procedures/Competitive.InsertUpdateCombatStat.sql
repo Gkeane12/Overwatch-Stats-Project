@@ -1,18 +1,18 @@
 /*
-Combat.InsertUpdateCombatStat.sql
+Competitive.InsertUpdateCombatStat.sql
 */
 
 if(exists(
 	select * 
 	from sys.sysobjects
-	where id = object_id(N'[Combat].[InsertUpdateCombatStat]')
+	where id = object_id(N'[Competitive].[InsertUpdateCombatStat]')
 		and objectproperty(id, N'IsProcedure')=1))
 		begin
-			drop procedure [Combat].[InsertUpdateCombatStat];
+			drop procedure [Competitive].[InsertUpdateCombatStat];
 		end;
 go
 
-create procedure [Combat].[InsertUpdateCombatStat]
+create procedure [Competitive].[InsertUpdateCombatStat]
 (
 	@profileGuid uniqueidentifier,
 	@meleeFinalBlows int,
@@ -33,11 +33,11 @@ set transaction isolation level read committed;
 declare @currentDate date = getdate();
 
 if(exists(
-	select * from Combat.Competitive
+	select * from Competitive.OverallCombat
 	where ProfileGuid = @profileGuid
 		and RecordDate = @currentDate))
 begin
-	update Combat.Competitive
+	update Competitive.OverallCombat
 	set 
 		MeleeFinalBlows = @meleeFinalBlows,
 		ObjectiveKills = @objectiveKills,
@@ -54,7 +54,7 @@ begin
 end
 else
 begin
-	insert into Combat.Competitive
+	insert into Competitive.OverallCombat
 	(
 		ProfileGuid, 
 		MeleeFinalBlows, 

@@ -22,7 +22,7 @@ namespace OverwatchStats.Store.Service.Combat
                 using (SqlConnection conn = new SqlConnection(_connectionString))
                 {
                     conn.Open();
-                    SqlCommand command = new SqlCommand("Combat.GetLatestCombatStatsForProfileGuid", conn);
+                    SqlCommand command = new SqlCommand("Competitive.GetLatestCombatStatsForProfileGuid", conn);
                     command.CommandType = System.Data.CommandType.StoredProcedure;
 
                     command.Parameters.Add(
@@ -74,7 +74,7 @@ namespace OverwatchStats.Store.Service.Combat
                 {
                     conn.Open();
 
-                    SqlCommand command = new SqlCommand("Combat.GetAllCombatStatsForProfileGuid", conn);
+                    SqlCommand command = new SqlCommand("Competitive.GetAllCombatStatsForProfileGuid", conn);
                     command.CommandType = System.Data.CommandType.StoredProcedure;
 
                     command.Parameters.Add(
@@ -127,7 +127,7 @@ namespace OverwatchStats.Store.Service.Combat
                 using (SqlConnection conn = new SqlConnection(_connectionString))
                 {
                     conn.Open();
-                    SqlCommand command = new SqlCommand("Combat.InsertUpdateCombatStat", conn);
+                    SqlCommand command = new SqlCommand("Competitive.InsertUpdateCombatStat", conn);
                     command.CommandType = System.Data.CommandType.StoredProcedure;
 
                     command.Parameters.AddRange(new SqlParameter[] {

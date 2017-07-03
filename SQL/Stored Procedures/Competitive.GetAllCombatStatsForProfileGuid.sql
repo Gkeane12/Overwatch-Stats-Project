@@ -1,17 +1,17 @@
 /* 
-Combat.GetAllCombatStatsForProfileGuid.sql
+Competitive.GetAllCombatStatsForProfileGuid.sql
 */
 if(exists(
 	select *
 	from sys.sysobjects
-	where id = object_id(N'[Combat].[GetAllCombatStatsForProfileGuid]')
+	where id = object_id(N'[Competitive].[GetAllCombatStatsForProfileGuid]')
 		and objectproperty(id, N'IsProcedure') =1))
 		begin
-			drop procedure [Combat].[GetAllCombatStatsForProfileGuid];
+			drop procedure [Competitive].[GetAllCombatStatsForProfileGuid];
 		end;
 go
 
-create procedure [Combat].[GetAllCombatStatsForProfileGuid]
+create procedure [Competitive].[GetAllCombatStatsForProfileGuid]
 (
 	@profileGuid uniqueidentifier
 )
@@ -30,6 +30,6 @@ select
 	RecordDate,
 	SR,
 	EnvironmentalKills
-from Combat.Competitive
+from Competitive.OverallCombat
 where ProfileGuid = @profileGuid
 	order by RecordDate desc;
