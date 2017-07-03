@@ -1,0 +1,17 @@
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Service.Web.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Service.Web.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\HtmlAgilityPack.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Common.Data.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Common.Data.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\HtmlAgilityPack.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\bin\Release\HtmlAgilityPack.xml
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\obj\Release\OverwatchStats.Service.Web.csprojResolveAssemblyReference.cache
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\obj\Release\OverwatchStats.Service.Web.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Service.Web\obj\Release\OverwatchStats.Service.Web.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Service.Web.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Service.Web.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Common.Data.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\bin\Release\OverwatchStats.Common.Data.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\obj\Release\OverwatchStats.Service.Web.csprojResolveAssemblyReference.cache
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\obj\Release\OverwatchStats.Service.Web.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Service.Web\obj\Release\OverwatchStats.Service.Web.pdb

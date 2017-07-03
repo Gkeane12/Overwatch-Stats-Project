@@ -1,0 +1,10 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AllowParallelTestExecution>False</AllowParallelTestExecution>
+    <MetricsExclusionList>
+      <Value>ObjectCreator\CombatStrings.cs:..\OverwatchStats\OverwatchStats.Service.Web\OverwatchStats.Service.Web.csproj</Value>
+      <Value>..\OverwatchStats\OverwatchStats.Service.Web\OverwatchStats.Service.Web.csproj\Properties</Value>
+    </MetricsExclusionList>
+    <SolutionConfigured>True</SolutionConfigured>
+  </Settings>
+</SolutionConfiguration>

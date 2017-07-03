@@ -1,0 +1,8 @@
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\bin\Debug\OverwatchStats.WCF.Test.dll.config
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\bin\Debug\OverwatchStats.WCF.Test.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\bin\Debug\OverwatchStats.WCF.Test.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\bin\Debug\OverwatchStats.Common.Data.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\bin\Debug\OverwatchStats.Common.Data.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\obj\Debug\OverwatchStats.WCF.Test.csprojResolveAssemblyReference.cache
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\obj\Debug\OverwatchStats.WCF.Test.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Test\obj\Debug\OverwatchStats.WCF.Test.pdb

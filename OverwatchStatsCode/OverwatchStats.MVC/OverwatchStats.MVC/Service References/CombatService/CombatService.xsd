@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="OverallCombat">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DamageDone" type="xs:long" />
+      <xs:element minOccurs="0" name="Eliminations" type="xs:int" />
+      <xs:element minOccurs="0" name="EnvironmentalKills" type="xs:int" />
+      <xs:element minOccurs="0" name="FinalBlows" type="xs:int" />
+      <xs:element minOccurs="0" name="MeleeFinalBlows" type="xs:int" />
+      <xs:element minOccurs="0" name="MultiKills" type="xs:int" />
+      <xs:element minOccurs="0" name="ObjectiveKills" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SoloKills" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OverallCombat" nillable="true" type="tns:OverallCombat" />
+  <xs:complexType name="ArrayOfOverallCombat">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OverallCombat" nillable="true" type="tns:OverallCombat" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOverallCombat" nillable="true" type="tns:ArrayOfOverallCombat" />
+</xs:schema>

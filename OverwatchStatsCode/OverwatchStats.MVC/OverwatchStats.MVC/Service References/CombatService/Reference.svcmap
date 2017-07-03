@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="082a23bd-fa00-4617-9b29-8e6af92161ff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="OverwatchStats.Common.Data" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51937/CombatService/CombatService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CombatService.xsd" MetadataType="Schema" ID="76108b68-8f85-478c-9abe-b049cf2fa93a" SourceId="1" SourceUrl="http://localhost:51937/CombatService/CombatService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CombatService.wsdl" MetadataType="Wsdl" ID="a776abef-f98a-4fd6-a059-ceee66acfadc" SourceId="1" SourceUrl="http://localhost:51937/CombatService/CombatService.svc?wsdl" />
+    <MetadataFile FileName="CombatService.disco" MetadataType="Disco" ID="e58007bb-eade-43cf-b4bf-9332dd98e122" SourceId="1" SourceUrl="http://localhost:51937/CombatService/CombatService.svc?disco" />
+    <MetadataFile FileName="CombatService1.xsd" MetadataType="Schema" ID="2400e552-b061-4841-9b6f-2c036b33b25c" SourceId="1" SourceUrl="http://localhost:51937/CombatService/CombatService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CombatService2.xsd" MetadataType="Schema" ID="fe5452e3-7ff1-4957-9681-75c3f2f09e6e" SourceId="1" SourceUrl="http://localhost:51937/CombatService/CombatService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

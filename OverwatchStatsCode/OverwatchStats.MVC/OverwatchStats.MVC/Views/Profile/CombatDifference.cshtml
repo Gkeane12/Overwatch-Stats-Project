@@ -1,0 +1,39 @@
+﻿@model OverwatchStats.MVC.Models.OverallCombatModel
+<style>
+    #DifferenceHeadder{
+        text-align:center
+    }
+    .dl-horizontal dt{
+        text-align:center
+    }
+</style>
+    <h4 id="DifferenceHeadder">Difference</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            +@Html.DisplayFor(model => model.DamageDone)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.SoloKills)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.MeleeFinalBlows)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.ObjectiveKills)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.FinalBlows)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.Eliminations)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.EnvironmentalKills)
+        </dt>
+        <dt>
+            +@Html.DisplayFor(model => model.MultiKills)
+        </dt>
+    </dl>
+
+

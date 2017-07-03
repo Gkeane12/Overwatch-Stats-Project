@@ -1,0 +1,43 @@
+﻿@model Tuple<Guid, string>
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Profile</h3>
+<div>
+    @if (Model.Item1 != Guid.Empty)
+    {
+
+        <h4>@Html.DisplayFor(model => model.Item2)</h4>
+
+        <dl class="dl-horizontal">
+            <dt>
+               User Name
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Item2)
+            </dd>
+
+        </dl>
+
+        <p>
+            @{Html.RenderAction("CombatStatLatestComparison", new { profileGuid = Model.Item1 });}
+        </p>
+                }
+                else
+                {
+                    <div>
+                        <h4>Profile Not Found</h4>
+                    </div>
+                    <p>
+                        Profile doesn't exist in database please check spelling, regiond and platform is correct.
+                    </p>
+                }
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

@@ -1,0 +1,76 @@
+﻿@model OverwatchStats.MVC.Models.OverallCombatModel
+<style>
+  #Datetitle{
+        text-align:center
+    }
+</style>
+<div>
+    <h4 id="Datetitle">@Html.DisplayFor(model => model.RecordDate)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DamageDone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DamageDone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoloKills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoloKills)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MeleeFinalBlows)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MeleeFinalBlows)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObjectiveKills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObjectiveKills)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinalBlows)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FinalBlows)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Eliminations)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Eliminations)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnvironmentalKills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnvironmentalKills)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MultiKills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MultiKills)
+        </dd>
+    </dl>
+</div>
+

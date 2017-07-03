@@ -1,0 +1,1 @@
+Start D:\Users\Gary\"Overwatch Stats Project"\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\OverwatchNightlyUpdaterClient.exe "D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\PlayerList.xml"

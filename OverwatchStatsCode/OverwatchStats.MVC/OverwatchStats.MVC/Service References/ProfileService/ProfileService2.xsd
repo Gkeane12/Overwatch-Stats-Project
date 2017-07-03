@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:51937/ProfileService/ProfileService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General.Enums" />
+  <xs:import schemaLocation="http://localhost:51937/ProfileService/ProfileService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Profile">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General.Enums" minOccurs="0" name="Platform" type="q1:Platform" />
+      <xs:element minOccurs="0" name="ProfileGuid" type="ser:guid" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General.Enums" minOccurs="0" name="Region" type="q2:Region" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Profile" nillable="true" type="tns:Profile" />
+  <xs:complexType name="ArrayOfProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Profile" nillable="true" type="tns:Profile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProfile" nillable="true" type="tns:ArrayOfProfile" />
+</xs:schema>

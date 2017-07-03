@@ -1,0 +1,14 @@
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.WCF.Service.dll.config
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.WCF.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.WCF.Service.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.Common.Data.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.Service.Web.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.Store.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\HtmlAgilityPack.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.Common.Data.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.Service.Web.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\bin\OverwatchStats.Store.Service.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\obj\Debug\OverwatchStats.WCF.Service.csprojResolveAssemblyReference.cache
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\obj\Debug\OverwatchStats.WCF.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.WCF.Service\obj\Debug\OverwatchStats.WCF.Service.pdb

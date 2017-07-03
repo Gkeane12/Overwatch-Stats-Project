@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7f82cf89-f60d-4c94-87c3-a16d78b21977" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="OverwatchStats.Common.Data" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51937/ProfileService/ProfileService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProfileService.xsd" MetadataType="Schema" ID="d54335d5-f464-4dc2-bbf8-9c7c19385b95" SourceId="1" SourceUrl="http://localhost:51937/ProfileService/ProfileService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProfileService1.xsd" MetadataType="Schema" ID="85e7aa24-650f-42db-a02d-485127cbeea6" SourceId="1" SourceUrl="http://localhost:51937/ProfileService/ProfileService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProfileService.wsdl" MetadataType="Wsdl" ID="0a31ba75-e7e7-4984-8015-b17cb9b156fb" SourceId="1" SourceUrl="http://localhost:51937/ProfileService/ProfileService.svc?wsdl" />
+    <MetadataFile FileName="ProfileService2.xsd" MetadataType="Schema" ID="606c71fa-1b85-4f18-bbeb-efea129648eb" SourceId="1" SourceUrl="http://localhost:51937/ProfileService/ProfileService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProfileService3.xsd" MetadataType="Schema" ID="3ca31cdb-29f1-47cb-a0d5-7016f4244aa8" SourceId="1" SourceUrl="http://localhost:51937/ProfileService/ProfileService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProfileService.disco" MetadataType="Disco" ID="a09a17a5-710c-4fbb-8b35-4c4aa48773b3" SourceId="1" SourceUrl="http://localhost:51937/ProfileService/ProfileService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

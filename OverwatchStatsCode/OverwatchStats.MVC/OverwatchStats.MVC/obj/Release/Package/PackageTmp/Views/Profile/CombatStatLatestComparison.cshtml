@@ -1,0 +1,63 @@
+﻿@model OverwatchStats.MVC.Models.OverallCombatComparisonModel
+
+<style>
+    .dl-horizontal dt {
+        text-align: left;
+    }
+
+    #scrollable-Stats div {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        $(window).load(function () {
+
+            var $gal = $("#scrollable-Stats"),
+                galW = $gal.outerWidth(true),
+                galSW = $gal[0].scrollWidth,
+                wDiff = (galSW / galW) - 1,  // widths difference ratio
+                mPadd = 100,  // Mousemove Padding
+                damp = 20,  // Mousemove response softness
+                mX = 0,   // Real mouse position
+                mX2 = 0,   // Modified mouse position
+                posX = 0,
+                mmAA = galW - (mPadd * 2), // The mousemove available area
+                mmAAr = (galW / mmAA);    // get available mousemove fidderence ratio
+
+            $gal.mousemove(function (e) {
+                mX = e.pageX - $(this).parent().offset().left - this.offsetLeft;
+                mX2 = Math.min(Math.max(0, mX - mPadd), mmAA) * mmAAr;
+            });
+
+            setInterval(function () {
+                posX += (mX2 - posX) / damp; // zeno's paradox equation "catching delay"
+                $gal.scrollLeft(posX * wDiff);
+            }, 10);
+
+        });
+
+    });
+</script>
+<div style="white-space: nowrap; width: 100%; overflow:hidden;">
+    <div class="row" id="scrollable-Stats" style="overflow-x: scroll; white-space: nowrap; padding-bottom:16px">
+
+        @for (int i = (Model._combatDifferences.Count); i > 0; i--)
+        {
+            <div>
+                @Html.Partial("CombatStatLatest", Model._combatModels[i])
+            </div>
+            <div>
+                @Html.Partial("CombatDifference", Model._combatDifferences[i - 1])
+            </div>
+        }
+        <div>
+            @Html.Partial("CombatStatLatest", Model._combatModels[0])
+        </div>
+    </div>
+</div>

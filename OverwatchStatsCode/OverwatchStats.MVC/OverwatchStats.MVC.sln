@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverwatchStats.MVC", "OverwatchStats.MVC\OverwatchStats.MVC.csproj", "{46571552-F4DA-4A23-BB28-1D799E8D5B31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverwatchStats.Common.Data", "..\OverwatchStats.Common.Data\OverwatchStats.Common.Data.csproj", "{54332BFA-623B-4EB7-9F97-D5FB1611E38F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverwatchStats.MVC.Test", "..\OverwatchStats.MVC.Test\OverwatchStats.MVC.Test.csproj", "{BEE4C120-A447-469C-87D1-C00957A9914A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46571552-F4DA-4A23-BB28-1D799E8D5B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46571552-F4DA-4A23-BB28-1D799E8D5B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46571552-F4DA-4A23-BB28-1D799E8D5B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46571552-F4DA-4A23-BB28-1D799E8D5B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54332BFA-623B-4EB7-9F97-D5FB1611E38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54332BFA-623B-4EB7-9F97-D5FB1611E38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54332BFA-623B-4EB7-9F97-D5FB1611E38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54332BFA-623B-4EB7-9F97-D5FB1611E38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE4C120-A447-469C-87D1-C00957A9914A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE4C120-A447-469C-87D1-C00957A9914A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE4C120-A447-469C-87D1-C00957A9914A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE4C120-A447-469C-87D1-C00957A9914A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Store.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Store.Service.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Common.Data.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Common.Data.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\obj\Debug\OverwatchStats.Store.Service.csprojResolveAssemblyReference.cache
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\obj\Debug\OverwatchStats.Store.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.WCF.Service\OverwatchStats.Store.Service\obj\Debug\OverwatchStats.Store.Service.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Store.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Store.Service.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Common.Data.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\bin\Debug\OverwatchStats.Common.Data.pdb
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\obj\Debug\OverwatchStats.Store.Service.csprojResolveAssemblyReference.cache
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\obj\Debug\OverwatchStats.Store.Service.dll
+D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Store.Service\obj\Debug\OverwatchStats.Store.Service.pdb

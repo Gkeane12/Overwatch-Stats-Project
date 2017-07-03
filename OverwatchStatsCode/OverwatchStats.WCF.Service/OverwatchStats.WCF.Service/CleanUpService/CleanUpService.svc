@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="OverwatchStats.WCF.Service.CleanUpService.CleanUpService" CodeBehind="CleanUpService.svc.cs" %>
