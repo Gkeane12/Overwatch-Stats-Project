@@ -29,6 +29,8 @@ namespace OverwatchStats.MVC.Models
 
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime RecordDate { get { return _stats.RecordDate; } }
+        [DisplayName("Season Rating")]
+        public int SR { get { return _stats.SR; } }
 
         public OverallCombatModel(Common.Data.General.OverallCombat combat)
         {

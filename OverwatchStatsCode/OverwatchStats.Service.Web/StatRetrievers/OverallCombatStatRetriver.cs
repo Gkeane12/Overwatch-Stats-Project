@@ -11,7 +11,9 @@ namespace OverwatchStats.Service.Web.StatRetrievers
         private const int _statValueIndex = 1;
         private Dictionary<string, long> _allHeroStats = new Dictionary<string, long>();
         private HtmlNodeCollection _combatNodeCollection;
+        private HtmlNode _srNode;
         private string _combatStatsXpath = "//*[@id='competitive']/section[3]/div/div[2]/div[1]/div/table/tbody";
+        private string _srxPath = "//*[@id='overview-section']/div/div[2]/div/div/div[1]/div/div[2]/div";
 
         public OverallCombatStatRetriever(HtmlDocument _doc)
         {
@@ -19,6 +21,7 @@ namespace OverwatchStats.Service.Web.StatRetrievers
                 throw new ArgumentNullException("_doc");
 
             var combatStatParentNode = _doc.DocumentNode.SelectSingleNode(_combatStatsXpath);
+            _srNode = _doc.DocumentNode.SelectSingleNode(_srxPath);
 
             if (combatStatParentNode != null && combatStatParentNode.ChildNodes.Any())
                 _combatNodeCollection = combatStatParentNode.ChildNodes;
@@ -33,6 +36,7 @@ namespace OverwatchStats.Service.Web.StatRetrievers
                 ExtractCombatIndividualStat(combatNode);
             }
 
+            ExtractSR();
             return _allHeroStats;
         }
 
@@ -48,5 +52,15 @@ namespace OverwatchStats.Service.Web.StatRetrievers
             _allHeroStats.Add(statName, statValue);
         }
 
+        private void ExtractSR()
+        {
+            long srValue;
+
+            if (_srNode != null)
+            {
+                long.TryParse(_srNode.InnerText, out srValue);
+                _allHeroStats.Add(ObjectCreator.CombatStrings.SR, srValue);
+            }
+        }
     }
 }

@@ -49,6 +49,7 @@ namespace OverwatchStats.Test.ObjectCreators
             Assert.AreEqual(expectedCombatStats.FinalBlows, actualCombatStats.FinalBlows, "FinalBlows");
             Assert.AreEqual(expectedCombatStats.MultiKills, actualCombatStats.MultiKills, "MultiKills");
             Assert.AreEqual(expectedCombatStats.MeleeFinalBlows, actualCombatStats.MeleeFinalBlows, "MeleeFinalBlows");
+            Assert.AreEqual(expectedCombatStats.SR, actualCombatStats.SR, "SR");
         }
 
         [TestMethod]
@@ -68,6 +69,21 @@ namespace OverwatchStats.Test.ObjectCreators
             Assert.AreEqual(initialExtractedvalues[CombatStrings.Eliminations], Resources.StaticSnapShotCombatStatInfo.Eliminations, "Eliminations stat not correctly being retrieved");
             Assert.AreEqual(initialExtractedvalues[CombatStrings.EnvironmentalKills], Resources.StaticSnapShotCombatStatInfo.EnvironmentalKills, "Environmental kills stat not correctly being retrieved");
             Assert.AreEqual(initialExtractedvalues[CombatStrings.MultKills], Resources.StaticSnapShotCombatStatInfo.MultiKills, "Multi kills stat not correctly being retrieved");
+            Assert.AreEqual(initialExtractedvalues[CombatStrings.SR], Resources.StaticSnapShotCombatStatInfo.SR, "SR stat not correctly extracted");
+
+        }
+
+        [TestMethod]
+        public void TestExtractingSR()
+        {
+            string docURI = string.Format(@"{0}/Resources/StaticSnapShot.html", Directory.GetCurrentDirectory());
+            HtmlDocument doc = new HtmlDocument();
+            doc.Load(docURI);
+
+            var StatRetriever = new OverallCombatStatRetriever(doc);
+            var initialExtractedvalues = StatRetriever.ExtractCombatStat();
+
+            Assert.IsNotNull(initialExtractedvalues[CombatStrings.SR], "Sr was not extracted");
         }
 
         private Dictionary<string, long> CreateTestData(long damageDone, long Eliminations, long environmentalKills)

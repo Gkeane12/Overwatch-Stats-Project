@@ -13,19 +13,21 @@
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <UseSerializerForFaults>true</UseSerializerForFaults>
-    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
-    <ReferencedAssemblies />
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="OverwatchStats.Common.Data" />
+    </ReferencedAssemblies>
     <ReferencedDataContractTypes />
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/OverwatchWCF/UpdateService/UpdateService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:51937/UpdateService/UpdateService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="UpdateService1.wsdl" MetadataType="Wsdl" ID="8a583a79-f9fa-4742-8302-19094bdb586d" SourceId="1" SourceUrl="http://localhost/OverwatchWCF/UpdateService/UpdateService.svc?wsdl" />
-    <MetadataFile FileName="UpdateService2.xsd" MetadataType="Schema" ID="770dd745-fec5-4939-a8f9-de4f84446b76" SourceId="1" SourceUrl="http://localhost/OverwatchWCF/UpdateService/UpdateService.svc?xsd=xsd1" />
-    <MetadataFile FileName="UpdateService21.xsd" MetadataType="Schema" ID="7f2d50a0-c3af-4a3c-ae94-db5a3ecc49bd" SourceId="1" SourceUrl="http://localhost/OverwatchWCF/UpdateService/UpdateService.svc?xsd=xsd0" />
-    <MetadataFile FileName="UpdateService1.disco" MetadataType="Disco" ID="da80192d-0e33-42f6-b1fc-04fcfef42b01" SourceId="1" SourceUrl="http://localhost/OverwatchWCF/UpdateService/UpdateService.svc?disco" />
+    <MetadataFile FileName="UpdateService.wsdl" MetadataType="Wsdl" ID="11324583-6045-4ee8-8219-a4ddd96fa19b" SourceId="1" SourceUrl="http://localhost:51937/UpdateService/UpdateService.svc?wsdl" />
+    <MetadataFile FileName="UpdateService.xsd" MetadataType="Schema" ID="0a3ff715-c3de-4fae-b6da-be86ab76195f" SourceId="1" SourceUrl="http://localhost:51937/UpdateService/UpdateService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UpdateService.disco" MetadataType="Disco" ID="035ea50f-a493-4770-a7a4-41f2d30a302a" SourceId="1" SourceUrl="http://localhost:51937/UpdateService/UpdateService.svc?disco" />
+    <MetadataFile FileName="UpdateService1.xsd" MetadataType="Schema" ID="04e74150-36da-4e6f-9912-4277571f6e59" SourceId="1" SourceUrl="http://localhost:51937/UpdateService/UpdateService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

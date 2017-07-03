@@ -28,6 +28,7 @@ select
 	Eliminations,
 	MultiKills,
 	RecordDate,
+	SR,
 	EnvironmentalKills
 from Combat.Competitive
 where ProfileGuid = @profileGuid

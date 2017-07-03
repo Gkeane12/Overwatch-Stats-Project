@@ -43,6 +43,9 @@ namespace OverwatchStats.Service.Web.ObjectCreator
                     case CombatStrings.SoloKill:
                         overallCombatStats.SoloKills = (int)CombatStat.Value;
                         break;
+                    case CombatStrings.SR:
+                        overallCombatStats.SR = (int)CombatStat.Value;
+                        break;
                     default:
                         //TODO LOGGING STAT EXTRACTED THATS NOT YET ACCOUNTED FOR
                         break;

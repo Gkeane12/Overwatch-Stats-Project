@@ -12,6 +12,7 @@ namespace OverwatchStats.Common.Data.General
         public int Eliminations { get; set; }
         public int EnvironmentalKills { get; set; }
         public int MultiKills { get; set; }
+        public int SR { get; set; }
         public DateTime RecordDate { get; set; }
     }
 }

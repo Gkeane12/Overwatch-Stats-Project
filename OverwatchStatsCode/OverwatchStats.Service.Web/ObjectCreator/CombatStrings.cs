@@ -24,5 +24,7 @@
 
         public const string MultKills = "Multikills";
         public const string MultKill = "Multikill";
+
+        public const string SR = "SR";
     }
 }

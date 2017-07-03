@@ -22,7 +22,8 @@ create procedure [Combat].[InsertUpdateCombatStat]
 	@damageDone bigint,
 	@eliminations int,
 	@multiKills int,
-	@environmentalKills int
+	@environmentalKills int,
+	@sr int
 )
 
 as 
@@ -46,7 +47,8 @@ begin
 		Eliminations = @eliminations,
 		MultiKills = @multiKills,
 		EnvironmentalKills = @environmentalKills,
-		RecordDate = @currentDate
+		RecordDate = @currentDate,
+		SR = @sr
 	where ProfileGuid = @profileGuid
 		and RecordDate = @currentDate;
 end
@@ -63,6 +65,7 @@ begin
 		Eliminations,
 		MultiKills,
 		EnvironmentalKills,
+		SR,
 		RecordDate
 	) 
 	values
@@ -76,6 +79,7 @@ begin
 		@eliminations,
 		@multiKills,
 		@environmentalKills,
+		@sr,
 		@currentDate
 	);
 end

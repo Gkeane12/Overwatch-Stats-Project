@@ -16,5 +16,6 @@ namespace OverwatchStats.Test.Resources
         internal const long DamageDone = 689803;
         internal const long EnvironmentalKills = 16;
         internal const long MultiKills = 17;
+        internal const long SR = 3157;
     }
 }

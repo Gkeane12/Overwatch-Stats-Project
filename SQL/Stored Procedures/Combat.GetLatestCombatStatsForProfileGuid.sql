@@ -30,6 +30,7 @@ select top 1
 	Eliminations,
 	MultiKills,
 	RecordDate,
+	SR,
 	EnvironmentalKills
 from Combat.Competitive
 where ProfileGuid = @profileGuid

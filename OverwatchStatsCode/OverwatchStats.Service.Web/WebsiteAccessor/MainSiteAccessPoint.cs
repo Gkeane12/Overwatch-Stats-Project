@@ -20,16 +20,19 @@ namespace OverwatchStats.Service.Web.WebsiteAccessor
 
         public OverwatchStats.Common.Data.General.OverallCombat ExtractCombatStatsFromSite()
         {
+            Common.Data.General.OverallCombat combat = new Common.Data.General.OverallCombat();
             try
             {
                 var stats = new StatRetrievers.OverallCombatStatRetriever(_doc).ExtractCombatStat();
-
-                return new ObjectCreator.OverallCombatStats().ConstructCombatStats(stats);
+                if(stats.Count > 0)
+                    combat = new ObjectCreator.OverallCombatStats().ConstructCombatStats(stats);
             }
             catch(Exception e)
             {
                 throw new Exception(e.Message);
             }
+
+            return combat;
         }
         private string RegionEnumToString(Common.Data.General.Enums.Region region)
         {

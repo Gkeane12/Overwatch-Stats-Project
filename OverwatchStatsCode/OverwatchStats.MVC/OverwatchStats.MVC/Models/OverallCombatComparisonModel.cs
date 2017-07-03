@@ -33,7 +33,8 @@ namespace OverwatchStats.MVC.Models
                     FinalBlows = _combatModels[i].FinalBlows - _combatModels[j].FinalBlows,
                     Eliminations = _combatModels[i].Eliminations - _combatModels[j].Eliminations,
                     EnvironmentalKills = _combatModels[i].EnvironmentalKills - _combatModels[j].EnvironmentalKills,
-                    MultiKills = _combatModels[i].MultiKills - _combatModels[j].MultiKills
+                    MultiKills = _combatModels[i].MultiKills - _combatModels[j].MultiKills,
+                    SR = _combatModels[i].SR - _combatModels[j].SR
                 };
 
                 _combatDifferences.Add(new OverallCombatModel(combatdiff));

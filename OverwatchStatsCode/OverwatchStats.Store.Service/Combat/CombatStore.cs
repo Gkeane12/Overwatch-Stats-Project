@@ -42,6 +42,7 @@ namespace OverwatchStats.Store.Service.Combat
                     int multiKillsOrdinal = rdr.GetOrdinal("MultiKills");
                     int recordDateOrdinal = rdr.GetOrdinal("RecordDate");
                     int environmentalOrdinal = rdr.GetOrdinal("EnvironmentalKills");
+                    int srOrdinal = rdr.GetOrdinal("SR");
 
                     while(rdr.Read())
                     {
@@ -54,6 +55,7 @@ namespace OverwatchStats.Store.Service.Combat
                         combatStat.MultiKills = rdr.GetInt32(multiKillsOrdinal);
                         combatStat.RecordDate = rdr.GetDateTime(recordDateOrdinal);
                         combatStat.EnvironmentalKills = rdr.GetInt32(environmentalOrdinal);
+                        combatStat.SR = rdr.GetInt32(srOrdinal);
                     }
                 }
             }
@@ -92,6 +94,7 @@ namespace OverwatchStats.Store.Service.Combat
                     int multiKillsOrdinal = rdr.GetOrdinal("MultiKills");
                     int recordDateOrdinal = rdr.GetOrdinal("RecordDate");
                     int environmentalOrdinal = rdr.GetOrdinal("EnvironmentalKills");
+                    int srOrdinal = rdr.GetOrdinal("SR");
 
                     while (rdr.Read())
                     {
@@ -105,6 +108,7 @@ namespace OverwatchStats.Store.Service.Combat
                         combatStat.MultiKills = rdr.GetInt32(multiKillsOrdinal);
                         combatStat.RecordDate = rdr.GetDateTime(recordDateOrdinal);
                         combatStat.EnvironmentalKills = rdr.GetInt32(environmentalOrdinal);
+                        combatStat.SR = rdr.GetInt32(srOrdinal);
 
                         combatStats.Add(combatStat);
                     }
@@ -135,7 +139,8 @@ namespace OverwatchStats.Store.Service.Combat
                         new SqlParameter("@damageDone", combatStat.DamageDone),
                         new SqlParameter("@eliminations", combatStat.Eliminations),
                         new SqlParameter("@multiKills", combatStat.MultiKills),
-                        new SqlParameter("@environmentalKills", combatStat.EnvironmentalKills)
+                        new SqlParameter("@environmentalKills", combatStat.EnvironmentalKills),
+                        new SqlParameter("@sr", combatStat.SR)
                     });
                     command.ExecuteNonQuery();
                 }

@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\UpdateSerive\UpdateService1.wsdl" />
-    <None Include="Service References\UpdateSerive\UpdateService2.xsd">
+    <None Include="Service References\UpdateSerive\UpdateService.wsdl" />
+    <None Include="Service References\UpdateSerive\UpdateService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\UpdateSerive\UpdateService21.xsd">
+    <None Include="Service References\UpdateSerive\UpdateService1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -70,7 +70,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Service References\UpdateSerive\UpdateService1.disco" />
+    <None Include="Service References\UpdateSerive\UpdateService.disco" />
     <None Include="Service References\UpdateSerive\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
