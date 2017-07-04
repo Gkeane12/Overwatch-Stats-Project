@@ -1,9 +1,0 @@
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Common.Data\bin\Release\OverwatchStats.Common.Data.dll
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Common.Data\bin\Release\OverwatchStats.Common.Data.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Common.Data\obj\Release\OverwatchStats.Common.Data.dll
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats\OverwatchStats.Common.Data\obj\Release\OverwatchStats.Common.Data.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\bin\Release\OverwatchStats.Common.Data.dll
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\bin\Release\OverwatchStats.Common.Data.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\obj\Release\OverwatchStats.Common.Data.dll
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\obj\Release\OverwatchStats.Common.Data.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\obj\Release\OverwatchStats.Common.Data.csprojResolveAssemblyReference.cache

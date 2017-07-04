@@ -1,9 +1,0 @@
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\PlayerList.xml
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\OverwatchNightlyUpdaterClient.exe.config
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\OverwatchNightlyUpdaterClient.exe
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\OverwatchNightlyUpdaterClient.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\OverwatchStats.Common.Data.dll
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\bin\Debug\OverwatchStats.Common.Data.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\obj\Debug\OverwatchNightlyUpdaterClient.csprojResolveAssemblyReference.cache
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\obj\Debug\OverwatchNightlyUpdaterClient.exe
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchNightlyUpdaterClient\OverwatchNightlyUpdaterClient\obj\Debug\OverwatchNightlyUpdaterClient.pdb
