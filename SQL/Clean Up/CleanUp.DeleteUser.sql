@@ -23,7 +23,7 @@ set nocount on;
 set transaction isolation level read committed;
 
 
-delete from General.OverallCombatStats where ProfileGuid = @profileGuid
+delete from Competitive.OverallCombat where ProfileGuid = @profileGuid
 delete from General.UserProfile where ProfileGuid = @profileGuid;
 
 go

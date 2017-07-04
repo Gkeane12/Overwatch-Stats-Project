@@ -30,4 +30,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="InsertLatestCombatStats">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="profileGuid" type="q5:guid" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General" minOccurs="0" name="combatRecord" nillable="true" type="q6:OverallCombat" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLatestCombatStatsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

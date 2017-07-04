@@ -9,23 +9,220 @@
 //------------------------------------------------------------------------------
 
 namespace OverwatchStats.WCF.Test.CombatService {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="OverallCombat", Namespace="http://schemas.datacontract.org/2004/07/OverwatchStats.Common.Data.General")]
+    [System.SerializableAttribute()]
+    public partial class OverallCombat : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private long DamageDoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int EliminationsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int EnvironmentalKillsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int FinalBlowsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int MeleeFinalBlowsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int MultiKillsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ObjectiveKillsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime RecordDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SRField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SoloKillsField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public long DamageDone {
+            get {
+                return this.DamageDoneField;
+            }
+            set {
+                if ((this.DamageDoneField.Equals(value) != true)) {
+                    this.DamageDoneField = value;
+                    this.RaisePropertyChanged("DamageDone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Eliminations {
+            get {
+                return this.EliminationsField;
+            }
+            set {
+                if ((this.EliminationsField.Equals(value) != true)) {
+                    this.EliminationsField = value;
+                    this.RaisePropertyChanged("Eliminations");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int EnvironmentalKills {
+            get {
+                return this.EnvironmentalKillsField;
+            }
+            set {
+                if ((this.EnvironmentalKillsField.Equals(value) != true)) {
+                    this.EnvironmentalKillsField = value;
+                    this.RaisePropertyChanged("EnvironmentalKills");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int FinalBlows {
+            get {
+                return this.FinalBlowsField;
+            }
+            set {
+                if ((this.FinalBlowsField.Equals(value) != true)) {
+                    this.FinalBlowsField = value;
+                    this.RaisePropertyChanged("FinalBlows");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int MeleeFinalBlows {
+            get {
+                return this.MeleeFinalBlowsField;
+            }
+            set {
+                if ((this.MeleeFinalBlowsField.Equals(value) != true)) {
+                    this.MeleeFinalBlowsField = value;
+                    this.RaisePropertyChanged("MeleeFinalBlows");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int MultiKills {
+            get {
+                return this.MultiKillsField;
+            }
+            set {
+                if ((this.MultiKillsField.Equals(value) != true)) {
+                    this.MultiKillsField = value;
+                    this.RaisePropertyChanged("MultiKills");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ObjectiveKills {
+            get {
+                return this.ObjectiveKillsField;
+            }
+            set {
+                if ((this.ObjectiveKillsField.Equals(value) != true)) {
+                    this.ObjectiveKillsField = value;
+                    this.RaisePropertyChanged("ObjectiveKills");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime RecordDate {
+            get {
+                return this.RecordDateField;
+            }
+            set {
+                if ((this.RecordDateField.Equals(value) != true)) {
+                    this.RecordDateField = value;
+                    this.RaisePropertyChanged("RecordDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SR {
+            get {
+                return this.SRField;
+            }
+            set {
+                if ((this.SRField.Equals(value) != true)) {
+                    this.SRField = value;
+                    this.RaisePropertyChanged("SR");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SoloKills {
+            get {
+                return this.SoloKillsField;
+            }
+            set {
+                if ((this.SoloKillsField.Equals(value) != true)) {
+                    this.SoloKillsField = value;
+                    this.RaisePropertyChanged("SoloKills");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CombatService.ICombatService")]
     public interface ICombatService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICombatService/GetLatestCompetitiveCombatStats", ReplyAction="http://tempuri.org/ICombatService/GetLatestCompetitiveCombatStatsResponse")]
-        OverwatchStats.Common.Data.General.OverallCombat GetLatestCompetitiveCombatStats(System.Guid profileGuid);
+        OverwatchStats.WCF.Test.CombatService.OverallCombat GetLatestCompetitiveCombatStats(System.Guid profileGuid);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICombatService/GetLatestCompetitiveCombatStats", ReplyAction="http://tempuri.org/ICombatService/GetLatestCompetitiveCombatStatsResponse")]
-        System.Threading.Tasks.Task<OverwatchStats.Common.Data.General.OverallCombat> GetLatestCompetitiveCombatStatsAsync(System.Guid profileGuid);
+        System.Threading.Tasks.Task<OverwatchStats.WCF.Test.CombatService.OverallCombat> GetLatestCompetitiveCombatStatsAsync(System.Guid profileGuid);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStats", ReplyAction="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStatsResponse")]
-        OverwatchStats.Common.Data.General.OverallCombat[] GetAllCompetitiveCombatStats(System.Guid profileGuid);
+        OverwatchStats.WCF.Test.CombatService.OverallCombat[] GetAllCompetitiveCombatStats(System.Guid profileGuid);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStats", ReplyAction="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStatsResponse")]
-        System.Threading.Tasks.Task<OverwatchStats.Common.Data.General.OverallCombat[]> GetAllCompetitiveCombatStatsAsync(System.Guid profileGuid);
+        System.Threading.Tasks.Task<OverwatchStats.WCF.Test.CombatService.OverallCombat[]> GetAllCompetitiveCombatStatsAsync(System.Guid profileGuid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICombatService/InsertLatestCombatStats", ReplyAction="http://tempuri.org/ICombatService/InsertLatestCombatStatsResponse")]
+        void InsertLatestCombatStats(System.Guid profileGuid, OverwatchStats.WCF.Test.CombatService.OverallCombat combatRecord);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICombatService/InsertLatestCombatStats", ReplyAction="http://tempuri.org/ICombatService/InsertLatestCombatStatsResponse")]
+        System.Threading.Tasks.Task InsertLatestCombatStatsAsync(System.Guid profileGuid, OverwatchStats.WCF.Test.CombatService.OverallCombat combatRecord);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,20 +252,28 @@ namespace OverwatchStats.WCF.Test.CombatService {
                 base(binding, remoteAddress) {
         }
         
-        public OverwatchStats.Common.Data.General.OverallCombat GetLatestCompetitiveCombatStats(System.Guid profileGuid) {
+        public OverwatchStats.WCF.Test.CombatService.OverallCombat GetLatestCompetitiveCombatStats(System.Guid profileGuid) {
             return base.Channel.GetLatestCompetitiveCombatStats(profileGuid);
         }
         
-        public System.Threading.Tasks.Task<OverwatchStats.Common.Data.General.OverallCombat> GetLatestCompetitiveCombatStatsAsync(System.Guid profileGuid) {
+        public System.Threading.Tasks.Task<OverwatchStats.WCF.Test.CombatService.OverallCombat> GetLatestCompetitiveCombatStatsAsync(System.Guid profileGuid) {
             return base.Channel.GetLatestCompetitiveCombatStatsAsync(profileGuid);
         }
         
-        public OverwatchStats.Common.Data.General.OverallCombat[] GetAllCompetitiveCombatStats(System.Guid profileGuid) {
+        public OverwatchStats.WCF.Test.CombatService.OverallCombat[] GetAllCompetitiveCombatStats(System.Guid profileGuid) {
             return base.Channel.GetAllCompetitiveCombatStats(profileGuid);
         }
         
-        public System.Threading.Tasks.Task<OverwatchStats.Common.Data.General.OverallCombat[]> GetAllCompetitiveCombatStatsAsync(System.Guid profileGuid) {
+        public System.Threading.Tasks.Task<OverwatchStats.WCF.Test.CombatService.OverallCombat[]> GetAllCompetitiveCombatStatsAsync(System.Guid profileGuid) {
             return base.Channel.GetAllCompetitiveCombatStatsAsync(profileGuid);
+        }
+        
+        public void InsertLatestCombatStats(System.Guid profileGuid, OverwatchStats.WCF.Test.CombatService.OverallCombat combatRecord) {
+            base.Channel.InsertLatestCombatStats(profileGuid, combatRecord);
+        }
+        
+        public System.Threading.Tasks.Task InsertLatestCombatStatsAsync(System.Guid profileGuid, OverwatchStats.WCF.Test.CombatService.OverallCombat combatRecord) {
+            return base.Channel.InsertLatestCombatStatsAsync(profileGuid, combatRecord);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OverwatchStats.Common.Data.General;
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 
@@ -13,5 +14,8 @@ namespace OverwatchStats.WCF.Service.CombatService
 
         [OperationContract]
         List<Common.Data.General.OverallCombat> GetAllCompetitiveCombatStats(Guid profileGuid);
+
+        [OperationContract]
+        void InsertLatestCombatStats(Guid profileGuid, OverallCombat combatRecord);
     }
 }

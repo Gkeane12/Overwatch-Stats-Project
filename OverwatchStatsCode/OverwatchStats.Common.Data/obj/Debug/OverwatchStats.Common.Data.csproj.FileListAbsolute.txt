@@ -6,4 +6,3 @@ D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.D
 D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\bin\Debug\OverwatchStats.Common.Data.pdb
 D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\obj\Debug\OverwatchStats.Common.Data.dll
 D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\obj\Debug\OverwatchStats.Common.Data.pdb
-D:\Users\Gary\Overwatch Stats Project\OverwatchStatsCode\OverwatchStats.Common.Data\obj\Debug\OverwatchStats.Common.Data.csprojResolveAssemblyReference.cache

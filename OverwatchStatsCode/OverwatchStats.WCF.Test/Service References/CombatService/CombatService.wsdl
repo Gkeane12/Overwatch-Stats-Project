@@ -19,6 +19,12 @@
   <wsdl:message name="ICombatService_GetAllCompetitiveCombatStats_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllCompetitiveCombatStatsResponse" />
   </wsdl:message>
+  <wsdl:message name="ICombatService_InsertLatestCombatStats_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLatestCombatStats" />
+  </wsdl:message>
+  <wsdl:message name="ICombatService_InsertLatestCombatStats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLatestCombatStatsResponse" />
+  </wsdl:message>
   <wsdl:portType name="ICombatService">
     <wsdl:operation name="GetLatestCompetitiveCombatStats">
       <wsdl:input wsaw:Action="http://tempuri.org/ICombatService/GetLatestCompetitiveCombatStats" message="tns:ICombatService_GetLatestCompetitiveCombatStats_InputMessage" />
@@ -27,6 +33,10 @@
     <wsdl:operation name="GetAllCompetitiveCombatStats">
       <wsdl:input wsaw:Action="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStats" message="tns:ICombatService_GetAllCompetitiveCombatStats_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStatsResponse" message="tns:ICombatService_GetAllCompetitiveCombatStats_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLatestCombatStats">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICombatService/InsertLatestCombatStats" message="tns:ICombatService_InsertLatestCombatStats_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICombatService/InsertLatestCombatStatsResponse" message="tns:ICombatService_InsertLatestCombatStats_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICombatService" type="tns:ICombatService">
@@ -42,6 +52,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllCompetitiveCombatStats">
       <soap:operation soapAction="http://tempuri.org/ICombatService/GetAllCompetitiveCombatStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLatestCombatStats">
+      <soap:operation soapAction="http://tempuri.org/ICombatService/InsertLatestCombatStats" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

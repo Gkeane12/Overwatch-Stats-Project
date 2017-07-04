@@ -55,6 +55,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CombatService\CombatServiceTestBase.cs" />
+    <Compile Include="CombatService\CombatServiceTests.cs" />
     <Compile Include="ProfileServiceTests\ProfileCreateGetTests.cs" />
     <Compile Include="ProfileServiceTests\ProfileServiceTestBase.cs" />
     <Compile Include="Service References\CleanUpService\Reference.cs">
@@ -97,6 +99,9 @@
     </None>
     <None Include="Service References\CombatService\CombatService2.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CombatService\OverwatchStats.WCF.Test.CombatService.OverallCombat.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ProfileService\ProfileService.wsdl" />
     <None Include="Service References\ProfileService\ProfileService.xsd">
@@ -168,6 +173,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

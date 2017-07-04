@@ -19,5 +19,11 @@ namespace OverwatchStats.WCF.Service.CombatService
             return new CombatStatManager()
                 .GetLatestCompetitiveCombatStats(profileGuid);
         }
+
+        public void InsertLatestCombatStats(Guid profileGuid, OverallCombat combatRecord)
+        {
+            new CombatStatManager()
+                .CheckandUpdateLatestCompetitiveCombatStats(profileGuid: profileGuid, combatStat: combatRecord);
+        }
     }
 }
