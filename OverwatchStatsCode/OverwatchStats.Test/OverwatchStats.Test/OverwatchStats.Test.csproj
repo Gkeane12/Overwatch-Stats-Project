@@ -56,8 +56,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ObjectCreators\AverageStatCreator.cs" />
     <Compile Include="ObjectCreators\OverallCombatStatCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\StaticSnapShotAverageStatInfo.cs" />
     <Compile Include="Resources\StaticSnapShotCombatStatInfo.cs" />
   </ItemGroup>
   <ItemGroup>

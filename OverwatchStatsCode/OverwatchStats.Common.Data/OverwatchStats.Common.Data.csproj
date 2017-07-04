@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="General\Averages.cs" />
     <Compile Include="General\Enums\Platform.cs" />
     <Compile Include="General\Enums\Region.cs" />
     <Compile Include="General\OverallCombat.cs" />

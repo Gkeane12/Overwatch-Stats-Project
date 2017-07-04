@@ -44,9 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObjectCreator\AverageStats.cs" />
+    <Compile Include="ObjectCreator\AverageStrings.cs" />
     <Compile Include="ObjectCreator\CombatStrings.cs" />
     <Compile Include="ObjectCreator\OverallCombatStats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatRetrievers\AverageStatRetriever.cs" />
     <Compile Include="StatRetrievers\OverallCombatStatRetriver.cs" />
     <Compile Include="WebsiteAccessor\MainSiteAccessPoint.cs" />
     <Compile Include="WebsiteAccessor\WebsiteStringURL.cs" />
