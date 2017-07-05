@@ -1,4 +1,5 @@
 ﻿@model OverwatchStats.MVC.Models.OverallCombatModel
+   @using OverwatchStats.MVC.CustomHTMLHelpers
 <style>
     #DifferenceHeadder{
         text-align:center
@@ -11,7 +12,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            +@Html.DisplayFor(model => model.DamageDone)
+             +@Html.DisplayFor(model => model.DamageDone)
         </dt>
         <dt>
             +@Html.DisplayFor(model => model.SoloKills)
@@ -35,7 +36,7 @@
             +@Html.DisplayFor(model => model.MultiKills)
         </dt>
         <dt>
-            +@Html.DisplayFor(model => model.SR)
+            @Html.Modifier(Model.SR > 0)@Html.DisplayFor(model => model.SR)
         </dt>
     </dl>
 
